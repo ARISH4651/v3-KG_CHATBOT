@@ -3,8 +3,9 @@
 KG_CHATBOT is a powerful, context-aware chatbot designed to serve as an intelligent assistant for KG Hospital. It leverages advanced Large Language Models (LLMs) and Vector Databases to provide accurate, real-time answers based on uploaded hospital documents (PDFs and Excel files).
 
 The application is built on Streamlit for the front-end, uses LangChain for RAG (Retrieval-Augmented Generation) pipeline, and is backed by Firebase Storage for secure and scalable document management.
-
+---
 **Features**
+
 Intelligent RAG System: Uses a Conversational Retrieval Chain powered by a Groq LLM (llama-3.3-70b-versatile) and a FAISS vector store for efficient, context-specific responses.
 
 Multi-Document Support: Capable of processing and embedding knowledge from both PDFs (using multiple robust loaders) and Excel files (converting structured data into searchable text).
