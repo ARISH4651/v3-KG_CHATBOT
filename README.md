@@ -56,7 +56,9 @@ Clone the repository and install the necessary dependencies:
 Bash
 
 git clone https://github.com/ARISH4651/v3-KG_CHATBOT.git
-cd v3-KG_CHATBOT
+
+cd v3-KG_CHATBO
+T
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt 
@@ -73,7 +75,9 @@ The application uses python-dotenv to load environment variables. Create a file 
 Code snippet
 
 # .env
+
 GROQ_API_KEY="your_groq_api_key_here" 
+
 B. Firebase Credentials (Streamlit Secrets)
 
 The application initializes Firebase Admin SDK using Streamlit secrets. For deployment with Streamlit, the Firebase credentials should be stored in the .streamlit/secrets.toml file (create this file and folder if they don't exist).
@@ -94,7 +98,7 @@ token_uri = "https://oauth2.googleapis.com/token"
 auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
 client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/..."
 ---
-▶️ Running the Application
+ Running the Application
 Execute the Streamlit application from your terminal:
 
 Bash
@@ -102,7 +106,7 @@ Bash
 streamlit run main.py
 The app will open in your web browser. It will automatically attempt to connect to Firebase, download any existing documents, build the vector store, and initialize the chat chain.
 
-➕ Document Management
+Document Management
 Upload Documents: Upload your hospital knowledge files (PDFs, .xlsx, or .xls) directly to your Firebase Storage bucket.
 
 Automatic Load: The chatbot will automatically detect and process the new files every 30 seconds. Use the "Check for New Files" button in the sidebar for an immediate manual check.
