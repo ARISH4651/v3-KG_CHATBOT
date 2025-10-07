@@ -1,0 +1,38 @@
+# Consolidated requirements for Docker image build
+# If you update dependencies, rebuild the image.
+
+python-dotenv==1.0.1
+streamlit==1.50.0
+
+# LangChain & ecosystem
+langchain-community
+langchain-text-splitters
+langchain-groq
+langchain-core
+faiss-cpu
+transformers
+sentence-transformers
+nltk
+
+# PDF & document processing
+PyPDF2==3.0.1
+pymupdf==1.24.13
+unstructured[pdf]
+Pillow
+
+# Excel support
+pandas
+openpyxl
+xlrd
+
+# Firebase
+firebase-admin
+
+# Additional helpful libs used implicitly
+groq
+requests
+python-multipart
+numpy
+scikit-learn
+
+# (Optional) If build size/time becomes large, consider trimming this list.
