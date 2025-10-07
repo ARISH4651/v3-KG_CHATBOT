@@ -25,12 +25,18 @@ Resilient Fallback: If a document-based answer is not found, the chatbot default
 Clean UI: Features a custom-styled, dark-mode Streamlit interface for a professional and modern user experience.
 ---
 **Technologies Used**
+
 Category	Technology	Purpose
 Framework	Python 3.x, Streamlit	Application structure and web interface.
+
 LLM & Hosting	Groq (via langchain-groq)	Fast, high-performance inference for conversation.
+
 Vector DB	FAISS, HuggingFaceEmbeddings (all-MiniLM-L6-v2)	Document embedding, indexing, and retrieval.
+
 RAG Pipeline	LangChain	Orchestration of the conversational retrieval chain.
+
 Data Storage	Firebase Storage	Cloud storage for source documents (PDFs, Excel).
+
 Configuration	python-dotenv, Streamlit Secrets	Environment variables and secure secret management.
 ---
 **Export to Sheets**
